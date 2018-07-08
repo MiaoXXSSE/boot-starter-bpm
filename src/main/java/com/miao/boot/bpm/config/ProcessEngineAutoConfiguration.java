@@ -8,7 +8,7 @@ public class ProcessEngineAutoConfiguration implements ProcessEngineConfiguratio
 	@Override
 	public void configure(SpringProcessEngineConfiguration config) {
 		//自定义缓存
-		config.setProcessDefinitionCache(new CustomDeploymentCache<>());
+//		config.setProcessDefinitionCache(new CustomDeploymentCache<>());
 	}
 
 }
