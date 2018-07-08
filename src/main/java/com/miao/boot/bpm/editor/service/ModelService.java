@@ -5,6 +5,7 @@ import java.util.List;
 import org.activiti.engine.repository.Model;
 import org.springframework.data.domain.Pageable;
 
+import com.miao.boot.bpm.editor.controller.param.ModelCreateParam;
 import com.miao.boot.bpm.editor.controller.param.ModelQueryParam;
 
 public interface ModelService {
@@ -13,7 +14,7 @@ public interface ModelService {
 	 * 创建一个新的model
 	 * @return modelId
 	 */
-	public Long createModel();
+	public Long createModel(ModelCreateParam param);
 
 	/**
 	 * 获取模型列表
